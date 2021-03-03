@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #faf8ef;
+  color: #776e65;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+}
+
+#game2048 {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 1px solid rosybrown;
+}
+
+.game-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.game-head-right {
+  display: flex;
+}
+
+.game-head .new-game {
+  background-color: #8f7a66;
+  color: #f9f6f2;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.game-head .game-head-right div {
+  text-transform: uppercase;
+  align-self: flex-end;
+  height: 40px;
+  align-items: flex-end;
+  background-color: #bbada0;
+  color: white;
+  padding: 5px 20px;
+}
+
+.game-head-right div:not(:last-child) {
+  margin: 0 10px;
+}
+
+.game-head-right div::after {
+  content: "0";
+  display: block;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+#game2048 .game-body {
+  margin-top: 20px;
+  background-color: #bbada0;
+}
+
+.game-body tr {
+  height: 120px;
+}
+
+.game-body tr td {
+  width: 120px;
+  border: 15px solid #bbada0;
+  text-align: center;
+  background-color: rgba(238, 228, 218, 0.35);
+}
